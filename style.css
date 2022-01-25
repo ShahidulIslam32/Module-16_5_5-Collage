@@ -9,3 +9,34 @@
     height: 100px;
     width: 100%;
 }
+blockquote::before{
+    content: open-quote;
+    color: crimson;
+    font-size: 46px;
+}
+blockquote::after{
+    content: close-quote;
+    color: crimson;
+    font-size: 46px;
+}
+.title{
+    transition: 1s ease all;
+}
+.title:hover::before{
+    content: '';
+    background-color: slateblue;
+    display:block;
+    width: 100%;
+    height: 2px;
+    transition: 1s ease all;
+
+}
+.title:hover::after{
+    content: '';
+    background-color: slateblue;
+    display: block;
+    width: 100%;
+    transition: 1s ease all;
+    height: 2px;
+
+}
